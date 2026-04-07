@@ -1,0 +1,22 @@
+---
+title: "Botanical"
+description: "Kumo Kumo stalk to fossil glass"
+section: "glass"
+main_image: "/images/botanical/20260403_150022.webp"
+gallery:
+  - "/images/botanical/20260403_150036.webp"
+  - "/images/botanical/20260406_143614(1).webp"
+  - "/images/botanical/20260406_144315.webp"
+  - "/images/botanical/20260406_144909.webp"
+  - "/images/botanical/20260406_145320.webp"
+  - "/images/botanical/20260406_150151.webp"
+  - "/images/botanical/20260406_151251.webp"
+  - "/images/botanical/IMG_3170.webp"
+  - "/images/botanical/IMG_3179.webp"
+  - "/images/botanical/IMG_4219.webp"
+  - "/images/botanical/IMG_9439.webp"
+  - "/images/botanical/IMG_9467.webp"
+  - "/images/botanical/Screenshot_20260401_215715_Instagram Lite.webp"
+  - "/images/botanical/Screenshot_20260401_215726_Instagram Lite.webp"
+  - "/images/botanical/Screenshot_20260401_215739_Instagram Lite.webp"
+---

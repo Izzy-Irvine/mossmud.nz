@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="section-list">
+  <h1>{{ .Title }}</h1>
+  {{ if .IsHome }}
+    <p>Welcome to Moss & Mud. Explore ceramics and glass art created from locally sourced clay, window glass, bottle glass and recycled materials.</p>
+  {{ else }}
+    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+    <div class="cards">
+      {{ range .Pages.ByTitle }}
+        <article class="card{{ if .Params.main_image }} card--image{{ end }}" {{ with .Params.main_image }}style="background-image: linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.18)), url('{{ . }}')"{{ end }}>
+          <a href="{{ .RelPermalink }}" class="card-link">
+            <h2>{{ .Title }}</h2>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  {{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,22 @@
+---
+title: "Bees"
+description: "Many bees, mostly fused onto windowglass"
+section: "glass"
+main_image: "/images/bees/20251217_115912.webp"
+gallery:
+  - "/images/bees/20251217_120207.webp"
+  - "/images/bees/20251217_120233.webp"
+  - "/images/bees/20251217_120657.webp"
+  - "/images/bees/20251217_120703.webp"
+  - "/images/bees/20260404_160023.webp"
+  - "/images/bees/20260404_161121.webp"
+  - "/images/bees/20260404_161622.webp"
+  - "/images/bees/20260404_161627.webp"
+  - "/images/bees/20260404_161648.webp"
+  - "/images/bees/20260404_161809.webp"
+  - "/images/bees/20260404_161921.webp"
+  - "/images/bees/20260404_161934.webp"
+  - "/images/bees/20260404_161939.webp"
+  - "/images/bees/20260404_161947.webp"
+  - "/images/bees/Screenshot_20260401_215820_Instagram Lite.webp"
+---

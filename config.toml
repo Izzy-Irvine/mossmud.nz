@@ -1,0 +1,30 @@
+baseURL = "https://mossmud.nz/"
+languageCode = "en-nz"
+title = "Moss & Mud"
+enableRobotsTXT = true
+paginate = 10
+
+defaultContentLanguage = "en"
+
+[params]
+  email = "moss.mud.nz@gmail.com"
+  location = "Linden, Te Whanganui a Tara"
+
+[menu]
+  [[menu.main]]
+    identifier = "ceramics"
+    name = "Ceramics"
+    url = "/ceramics/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "glass"
+    name = "Glass"
+    url = "/glass/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30

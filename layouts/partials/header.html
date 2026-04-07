@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="brand"><a href="/">{{ .Site.Title }}</a></div>
+  <nav class="site-nav">
+    <ul class="menu">
+      {{ range .Site.Menus.main }}
+        {{ $section := site.GetPage "section" .Identifier }}
+        <li class="menu-item{{ if and $section (gt (len $section.Pages) 0) }} has-dropdown{{ end }}">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ if and $section (gt (len $section.Pages) 0) }}
+            <ul class="dropdown">
+              {{ range $section.Pages.ByTitle }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

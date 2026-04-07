@@ -1,0 +1,21 @@
+---
+title: "Mushrooms"
+description: "Grown off old bottles"
+section: "glass"
+main_image: "/images/mushrooms/20260402_123907.webp"
+gallery:
+  - "/images/mushrooms/20260402_123916.webp"
+  - "/images/mushrooms/20260402_124124.webp"
+  - "/images/mushrooms/20260404_162334.webp"
+  - "/images/mushrooms/20260405_132816.webp"
+  - "/images/mushrooms/20260405_132846.webp"
+  - "/images/mushrooms/20260405_175130.webp"
+  - "/images/mushrooms/20260406_121421.webp"
+  - "/images/mushrooms/20260406_122122.webp"
+  - "/images/mushrooms/20260406_124624.webp"
+  - "/images/mushrooms/Screenshot_20260401_211716_Instagram Lite.webp"
+  - "/images/mushrooms/Screenshot_20260401_211836_Instagram Lite.webp"
+  - "/images/mushrooms/Screenshot_20260401_211847_Instagram Lite.webp"
+  - "/images/mushrooms/Screenshot_20260401_212004_Instagram Lite.webp"
+  - "/images/mushrooms/Screenshot_20260401_212020_Instagram Lite.webp"
+---

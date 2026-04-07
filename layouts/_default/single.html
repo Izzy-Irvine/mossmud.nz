@@ -1,0 +1,27 @@
+{{ define "main" }}
+<article class="page-detail">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}<p class="description">{{ . }}</p>{{ end }}
+
+  {{ if .Params.main_image }}
+    <div class="main-image">
+      <img src="{{ .Params.main_image }}" alt="{{ .Title }}">
+    </div>
+  {{ end }}
+
+  {{ $gallery := .Params.gallery }}
+  {{ if not $gallery }}{{ $gallery = .Params.images }}{{ end }}
+  {{ if $gallery }}
+    <div class="gallery">
+      {{ range $gallery }}
+        <div class="gallery-item">
+          <img src="{{ . }}" alt="">
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <div class="body-content">
+    {{ .Content }}
+  </div>
+{{ end }}
