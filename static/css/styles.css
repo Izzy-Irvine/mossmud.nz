@@ -1,0 +1,262 @@
+/* Minimal Hugo site styling for Moss & Mud */
+:root {
+  color-scheme: light;
+  color: #1a1a1a;
+  background: #f7f4ee;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header,
+.site-footer {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 1rem 1.5rem;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-header .brand a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item > a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu-item.has-dropdown > a::after {
+  content: "▾";
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.dropdown {
+  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  min-width: 220px;
+  z-index: 20;
+  transform: translateY(-0.25rem);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.menu-item:hover > .dropdown,
+.menu-item:focus-within > .dropdown {
+  display: block !important;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown li a:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.site-nav a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.content {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+body.home h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  letter-spacing: -0.04em;
+}
+
+.description,
+.section-list p,
+.page-detail p {
+  margin: 0.75rem 0 1.5rem;
+  max-width: 50rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #111;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+
+.card-link {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.card--image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card--image .card-link {
+  background: rgba(0,0,0,0.2);
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.main-image,
+.gallery {
+  margin: 1.5rem 0;
+}
+
+.main-image img,
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.back-link {
+  margin-top: 2rem;
+}
+
+.back-link a {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .site-header,
+  .site-footer,
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
